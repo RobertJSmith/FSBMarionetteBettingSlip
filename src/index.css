@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	  monospace;
+}
+
+#root {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.app-wrapper, .fav-list-container {
+	padding: 5px;
+	min-width: 50vw;
+}
+
+.counter-container, .counter-wrapper {
+	display:inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: #707377;
+	width: 100%;
+}
+  
+.counter-wrapper > select {
+	background-color: #707377;
+	color: white;
+	flex: 3;
+	flex-basis: 80%;
+}
+
+.counter-wrapper > p {
+	background-color: orange;
+	color: white;
+	flex:1;
+	margin: 0;
+	flex-basis: 20%;
+	text-align: center;
+}
+    
+.fav-list-container {
+	background-color: #707377;
+	color: white;
+	text-align: left;
+}
+  
+.fav-list-item {
+	display: flex;
+	color: black;
+	background-color: white;
+	border-bottom: 1px solid gray;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	padding: 5px;
+}
+  
+.fav-list-item > p {
+	justify-content: flex-start;
+	flex: 1;
+}
+  
+.fav-list-item > button {
+	justify-content: flex-end;
+	min-width: 50px;
+	min-height: 50px;
+	background-color: white;
+	border: 1px solid gray;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+  
+.item-selected {
+	zoom: 1.5;
+	background-color: green;
+}
+  
+.disabled {
+	opacity: 0.4;
+}
