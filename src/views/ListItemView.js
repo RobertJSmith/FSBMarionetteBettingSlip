@@ -27,6 +27,7 @@ const ListItemView = View.extend({
         } else {
             this.$el.removeClass('item-selected')
         }
+        this.el.id = 'item-' + this.model.get('id');
     },
 
     updateCounter(event) {
